@@ -1,0 +1,29 @@
+
+h1 {
+  color: #7be8f0;
+  background-color: black; 
+  text-align: left; 
+  font-style: normal; 
+  font-family: sans-serif;
+  highlight-text:  
+}
+h1 span.my {
+  color:rgb(255, 255, 255); 
+} 
+
+h2 {
+  color: white; 
+  background-color: rgb(81, 25, 114); 
+  text-align: center; 
+  font-style: italic; 
+  
+}
+
+
+h3 {
+  color: #050505; 
+  background-color: #84abdd; 
+  text-align: right; 
+  text-decoration: underline; 
+  font-weight : lighter
+}
