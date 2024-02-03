@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+width: 1000px;  
+margin: 0 auto;
+display: flex;
+justify-content:space-between;
+align-items: center;
+
+
+}
+.User-Card{
+  width: 100%;
+  background-color: #fff;
+  border: 3px solid #999;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  overflow:hidden;
+    
+}
+.en-tete{
+  background-color:#17a2b8 ;
+  height: 125px;
+  margin-bottom:70px
+
+}
+.contenu{
+  padding-left: 40px;
+  padding-top: 20px;
+}
+.contenu h1,
+.contenu h3,
+.contenu p {
+  margin: 20px 0px;
+
+}
+.photo{
+border-radius: 50%;
+background-color: #fff;
+height: 190px;
+padding: 10px;
+margin-top: 20px;
+margin-left: 10px;
+}
+.fleche{
+  height: 20px;
+}
+a{
+  color: #4a66ae;
+}
+.gear{
+  margin-right: 10px;
+  height: 20px;
+}
