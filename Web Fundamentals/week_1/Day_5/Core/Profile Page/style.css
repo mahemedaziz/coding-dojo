@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body {
+  background-color: #f3f3f3;
+  font-family: 'Roboto', sans-serif;
+  width: auto;
+}
+/* --------Flex bar------------------*/
+.nav {
+  background-color: #333333;
+  color: #ffffff;
+  height: 80px;
+  width: auto; /* for styling purposes */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-title {
+  margin-left: 20px;
+}
+
+.btn {
+  height: 35px;
+  width: 100px;
+  background-color: #17a2b8;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+  box-shadow: 5px 5px #000000;
+  margin-left: 600px;
+}
+
+/* --------User CARD------------------*/
+
+.flex-container {
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-card {
+  width: 100%;
+  background-color: #fff;
+  border: 2px solid #999;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  overflow: hidden;
+}
+
+.card-header {
+  background-color: #17a2b8;
+  height: 125px;
+  margin-bottom: 70px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body h1, 
+.card-body h2,
+.card-body h3,
+.card-body p {
+  margin: 20px 0px;
+}
+
+.avatar-m {
+  border-radius: 50%;
+  background-color: #fff;
+  height: 190px;
+  padding: 5px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.icon-s {
+  height: 20px;
+}
+
+a {
+  color: #3a81e6;
+}
+/*------------------- education ---------------------------------*/
+
+
+.flex-container2 {
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user-card2 {
+  width: 100%;
+  background-color: #fff;
+  border: 2px solid #999;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.card-header2 {
+  background-color: #333333;
+  height:100px;
+}
+.title{
+padding-top:25px ; 
+padding-left: 25px;
+color: #cccccc;
+}
+
+/*------------------- Connection Requests ---------------------------------*/
+
+.flex-container3 {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.user-card3 {
+  width: 100%;
+  background-color: #fff;
+  border: 2px solid #999;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  overflow: hidden;  
+  
+}
+.btn-add{
+  background-color:#999999;
+  color: #404040;
+  border-radius: 50%; 
+  width: 50px;
+  height: 50px;
+  align-self: center;
+  margin-left: 20px;
+  font-size: 1.2rem;
+  font-weight: 900;
+  padding-bottom: 3px;
+}
+
+
+.card-header3 {
+  background-color: #333333;
+  height:100px;
+  display: flex;
+
+  
+}
+
+.yes{
+  margin-right: 10px;
+}
+
+.card-body3{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  align-content: center;
+  align-items: center;
+
+}
+
+.confirmation{
+display: flex;
+
+}
+
+
+
+.Todd{
+display: flex;
+align-items: center;
+border-radius: 50%;
+background-color: #fff;
+height: 150px;
+padding: 5px;
+}
+/*------------------- Connection Requests ---------------------------------*/
+
+.flex-container4 {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.user-card4 {
+  width: 100%;
+  background-color: #fff;
+  border: 2px solid #999;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  overflow: hidden;  
+  height: 857px;
+}
+.btn-add2{
+  background-color:#999999;
+  color: #404040;
+  border-radius: 50%; 
+  width: 70px;
+  height: 50px;
+  align-self: center;
+  margin-left: 20px;
+  font-size: 1.2rem;
+  font-weight: 900;
+  padding-bottom: 3px;
+}
+
+
+.card-header4 {
+  background-color: #333333;
+  height:100px;
+  display: flex;
+
+  
+}
+
+
+
+.card-body4{
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px;
+
+
+}
+.adrien,
+.Anne,
+.Alayne,
+.Arry{
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #fff;
+  height: 150px;
+  padding: 5px;
+  }
+.view {
+    text-align: left;
+    text-decoration: underline;
+    border: #999 solid 2px;
+    width: 700px;
+    margin-left: -20px;
+    padding: 20px;
+    margin-top: 20px;
+    color:#22629d ;
+}
+.structure{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
