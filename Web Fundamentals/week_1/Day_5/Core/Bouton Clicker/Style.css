@@ -7,12 +7,15 @@
 
 body {
   background-color: #f3f3f3;
-  font-family: 'Roboto', sans-serif;
+  font-family: cursive, sans-serif;
 
 }
 .sub-container{
-  width: 960px;
+  width: auto;
   margin: auto;
+  margin-right: 40px;
+  margin-left: 40px;
+  
 }
 /* --------Flex bar------------------*/
 .nav {
@@ -62,6 +65,7 @@ body {
   text-align: center;
   height: 150px;
   width: 120%;
+  padding: 80px;
 
 }
 
@@ -91,6 +95,7 @@ body {
   height: 150px;
   margin-top: 40px;
   width: 120%;
+  padding: 80px;
 }
 
 
@@ -165,10 +170,10 @@ padding-top: 10%;
   width: 280px;
   align-items: center;
   text-align: center;
+  padding:80px;
 } 
 .card-body2 {
   padding: 20px;
-  
 }
 .btn2 {
   height: 35px;
