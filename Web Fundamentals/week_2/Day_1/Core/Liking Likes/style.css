@@ -82,10 +82,10 @@ main{
   width: 70px;
   color: #070707;
   background-color: #ffd966;
-  border: 2px solid black;
+  border: 3px solid black;
   font-size: 1.4rem;
   font-weight: bold;
-  box-shadow: 3px 3px ;
+  box-shadow: 4px 4px ;
 }
 .Right-column{
   padding: 20px;
