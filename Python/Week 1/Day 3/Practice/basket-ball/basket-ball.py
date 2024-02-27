@@ -82,3 +82,26 @@ print(Player_jason)
 print(Player_Kevin)
 print(Player_kyrie)
 print(Player_kyrie)
+
+# Additional player data
+lebron = {
+    "name": "LeBron James",
+    "age": 36,
+    "position": "Small Forward",
+    "team": "Los Angeles Lakers"
+}
+
+steph = {
+    "name": "Stephen Curry",
+    "age": 33,
+    "position": "Point Guard",
+    "team": "Golden State Warriors"
+}
+
+# Adding new players
+additional_players_data = [lebron, steph]
+additional_player_objects = Player.add_players(additional_players_data)
+
+# Printing information about the new players
+for player in additional_player_objects:
+    print(player)
