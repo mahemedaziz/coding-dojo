@@ -6,7 +6,7 @@ app.secret_key = 'keep it secret, keep it safe'
 @app.route('/')
 def hello():
     if "num" not in session:
-        session['num'] = 1
+        session['num'] = 0
     else:
         session['num'] += 1
     return render_template("index.html") 
@@ -22,7 +22,7 @@ def destroy():
 
 @app.route('/plus2', methods=['POST'])
 def plus2():
-    session['num'] += 2
+    session['num'] += 1
     return redirect('/')
 
 if __name__ == "__main__":
