@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid black; */
+}
+
+body {
+    height: 100vh;
+    /* overflow: hidden; */
+    background-image: url(../static/design/background.jpg);
+    background-attachment: fixed; /* Ajout de la propriété pour fixer l'image de fond */
+    background-size: cover; /* Assure que l'image de fond couvre toute la zone visible */
+    background-position: center; /* Centrer l'image de fond */
+}
+
+.logo{
+    display: flex;
+    margin-top: 2px;
+    align-items: center;
+}
+.title{
+    margin-bottom: 20px;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: #f5eeD1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    height: 70px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex; /* Utiliser la flexbox pour aligner les liens horizontalement */
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+
+
+.nav-links li a  {
+    color: #0e0101;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    padding: 20px;
+    margin-right: 1rem; /* Ajouter une marge entre les liens */
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    align-items: baseline;
+    margin-top: 22px;
+}
+
+/* ---------------------------------AZIZ CSS-------------------------- */
+.event-info {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffffbb;
+    width: 500px;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-top: 250px;
+    margin-left: 750px;
+}
+
+.event-info h2 {
+    margin-top: 0;
+}
+
+.event-info div {
+    margin-bottom: 10px;
+}
+
+.buttom{
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 10px;
+    margin: 30px;
+    margin-top: 50px;
+
+    
+}
+
+.divs{
+    margin: 30px 20px 40px 20px;
+}
+
+.buttoms{
+    margin: 20px 20px 20px 20px;
+    width: 100px;
+    height: 45px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 10px;
+    background-color: #cc927d;
+}
+.input{
+    /* margin-left: 50px; */
+    border-radius: 7px;
+    height: 30px;
+}
+
+img{
+    height: 50px;
+    margin-top: 4px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.login_div{
+    margin-top: 30px;
+}
+.aa{
+    margin-top: 30px;
+    margin-left: 70px;
+}

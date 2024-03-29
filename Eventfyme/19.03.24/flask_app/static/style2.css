@@ -1,0 +1,57 @@
+/* style2.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/pexels-harrison-haines-3696395.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: fadeInBackground 2s ease-in-out; /* Add fade-in animation */
+}
+
+
+
+
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.327); /* Add a semi-transparent background to the container */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #765b10;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #765b10;
+}

@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f5eeD1; */
+    font-weight: bold;
+    background-image: url('images/pexels-harrison-haines-3696395.jpg');
+    background-size:cover;
+
+}
+
+
+header {
+    background-color: #f5eeD1;
+    color: black;
+    padding: 20px 0;
+    
+}
+
+nav {
+    max-width: 1200px;
+    height: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav h1 {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    background-color: #b3664b;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  /* Responsive Navigation */
+  @media screen and (max-width: 600px) {
+    .navbar a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+  }
+
+.hero {
+    background-image: url('hero_background.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.events {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.event-card {
+    background-color: #f9f9f9c2;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 1px 2px 4px black;
+    display: flex;
+    
+}
+
+.event-card img {
+    width: 300px;
+    margin:20px;
+    height: 199px;
+    object-fit: cover;
+    border:2px solid black;
+    border-radius: 30px;
+}
+
+.event-info {
+    padding: 10px;
+    padding-left:20%;
+    height:200px;
+    width:640px;
+}
+
+.event-info h3 {
+    margin-top: 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4e371ec2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: #000000;
+    border-radius: 2px;
+}
+
+.btn:hover {
+    background-color: #b3620029;
+}
+
+footer {
+    background-color: #f5eed184;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+    
+}
+
+footer ul {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+footer p {
+    margin-top: 10px;
+}
+.event-info {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9c2;
+    width: 640px;
+    margin-left: 150px;
+    margin-top: 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    height:200px;
+}
+
+.event-info h2 {
+    margin-top: 0;
+}
+
+.event-info div {
+    margin-bottom: 10px;
+    padding-right: 20px;
+}
+
+.buttom{
+    margin-left: 800px;
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 10px;
+    
+}
+
+
+.divs{
+    margin: 30px 20px 40px 20px;
+}
+
+.buttoms{
+    margin: 20px 20px 20px 20px;
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 10px;
+    background-color: #cc927d;
+}
+.input{
+    /* margin-left: 50px; */
+    border-radius: 7px;
+    height: 30px;
+}
+h2{
+    color: #000000;
+    font-family: "Rubik Scribble", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size:italic;
+}
+p{
+    color: #000000;
+}

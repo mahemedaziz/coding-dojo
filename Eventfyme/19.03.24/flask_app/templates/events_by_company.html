@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events by Company</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/style_event_by_company.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../static/design/eventifyme-high-resolution-logo.webp" alt="Logo" width="100px" height="50px">
+            <div class="title">
+                <h1>EVENTIFYME</h1>
+            </div>
+        </div>
+        <nav class="navigation">
+            <ul class="nav-links">
+                <li class="home" ><a href="/">Home</a></li>
+                <li><a href="/events/new">Create a New Event</a></li>
+                <li class="events"><a href="/logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Welcome, {{ current_user.first_name }}</h1>
+        <div class="top">
+            {% for company in all_companies %}
+            <div><h2>All Events by {{company.name}}</h2></div>
+            {% endfor%}
+            <!-- <div class="right">
+                <a href="/events/new">+ Create an Event</a>
+                <a href="/">Home</a>
+                <a href="/logout">Logout</a>
+            </div> -->
+        </div>
+        <div class="main">
+                <table class=" table table-secondary ">
+                    <thead>
+                        <tr>
+                            <th scope="col">Event Name</th>
+                            <th scope="col">Event Type</th>
+                            <th scope="col">Event Date</th>
+                            <th scope="col">Price per Ticket</th>
+                            <th scope="col">Image</th> <!-- Nouvelle colonne pour l'image -->
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for event in company_events %}
+                            <tr>
+                                <td>{{ event.event_name }}</td>
+                                <td>{{ event.event_type }}</td>
+                                <td>{{ event.event_date }}</td>
+                                <td>{{ event.ticket_price }} dt</td>
+                                <!-- Nouvelle cellule pour l'image -->
+                                <td><img src="../static/img/imageFolder/{{event.image}}" alt="Event Image" style="max-width: 100px;"></td>
+                                <td>
+                                    <a href="/events/{{ event.id }}">View</a>
+                                    {% if current_user.role == 'admin' or event.user_id == current_user.id %}
+                                        | <a href="/events/edit/{{ event.id }}">Edit</a>
+                                        | <form action="/events/delete/{{ event.id }}" style="display: inline;">
+                                            <button type="submit" class="btn btn-outline-danger">Delete</button>
+                                        </form>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            
+        </div>
+    </div>
+</body>
+</html>

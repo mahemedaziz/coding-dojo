@@ -1,0 +1,68 @@
+body {
+    margin: 112px;
+    padding: 0;
+    color: #2e323c;
+    background: url("/19.03.24/flask_app/static/images/background.jpg") center/cover no-repeat;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Adding a fallback font */
+}
+
+.account-settings .user-profile {
+    margin: 0 0 1rem 0;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.account-settings .user-profile .user-avatar img {
+    width: 90px;
+    height: 90px;
+    border-radius: 100px; /* Simplified border-radius */
+}
+
+.account-settings .user-profile h6.user-email {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #9fa8b9;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 1rem;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f5eeD1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-family: "Lora", serif;
+    font-weight: 500;
+    height: 70px;
+}
+
+.logo {
+    display: flex;
+    margin-top: 12px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.nav-links li a {
+    color: #3b1a00; /* Brown color */
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    padding: 20px;
+    margin-right: 1rem;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Creation Confirmation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/Company_confirmation.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../static/design/eventifyme-high-resolution-logo.webp" alt="Logo" width="100px" height="50px">
+            <h1>EVENTIFYME</h1>
+        </div>
+        <nav class="navigation">
+            <ul class="nav-links">
+            <li class="home" ><a href="/">Home</a></li>
+            {% if current_user%}
+            <li><a href="{% if current_user.role == 'admin' %}/events/new{% elif current_user.role == 'user' %}/event_companies/new{% elif current_user.role == 'company' %}/events/new{% endif %}">Create a New Event</a></li>
+            <li><a href="{% if current_user.role == 'admin' %}/admin/dashboard{% elif current_user.role == 'company' %}/events/companies{% endif %}">My Profile</a></li>
+            <li><a href="/logout">Logout</a></li>
+            {% else %}
+            <!-- <li class="create-event" ><a href="/login">Partner With Us</a></li> -->
+                <li><a href="/login">Login/Register</a></li>
+            {% endif %}
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="title">
+        <h1>Company Creation Confirmation</h1>
+        </div>
+        <div class="text">
+            <p>We sincerely thank you for choosing our platform to create your company. Your trust in our service is greatly appreciated. We are pleased to inform you that your company has been successfully created!</p>
+            <p>Your company is now awaiting validation by our administrative team. We ensure that all companies on our platform meet our strict standards of quality and security. While this validation process may take some time, we will keep you informed of each step.</p>
+            <p>A confirmation email will be sent to the email address associated with your account. Please check your inbox, as well as your spam folder, in case our email is directed there. If you do not receive the confirmation email within the next few minutes, please feel free to contact us for assistance.</p>
+        </div>
+    </div>
+</body>
+</html>

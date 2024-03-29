@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid black; */
+}
+
+body {
+    height: 100vh;
+    /* overflow: hidden; */
+    background-image: url(../static/design/background.jpg);
+    background-attachment: fixed; /* Ajout de la propriété pour fixer l'image de fond */
+    background-size: cover; /* Assure que l'image de fond couvre toute la zone visible */
+    background-position: center; /* Centrer l'image de fond */
+}
+
+.logo{
+    display: flex;
+    margin-top: 12px;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: #f5eeD1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    height: 70px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex; /* Utiliser la flexbox pour aligner les liens horizontalement */
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+
+
+.nav-links li a  {
+    color: #0e0101;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    padding: 20px;
+    margin-right: 1rem; /* Ajouter une marge entre les liens */
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    align-items: baseline;
+    margin-top: 22px;
+}
+/* ---------------------------------AZIZ CSS-------------------------- */
+
+.event-info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 250px;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    
+}
+
+.col{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9c0;
+    width: 400px;
+    height: 500px;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.login-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 450px;
+}
+.login_div{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    font-size: 1.4rem;
+    
+
+}
+
+.buttoms{
+    margin: 20px 20px 20px 20px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 10px;
+    background-color: #cc927d;
+    font-size: 1.4rem;
+}

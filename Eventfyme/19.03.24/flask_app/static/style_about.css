@@ -1,0 +1,46 @@
+#about-us {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+#about-us h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+#about-us p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-md-6 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

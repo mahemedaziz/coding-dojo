@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style_eventpage.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='popup.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+
+</head>
+<body>
+
+
+        <header>
+            <nav>
+                <h1>EVENTIFYME</h1>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/19.03.24/flask_app/templates/about_us.html">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section class="hero">
+            <h2>Discover Exciting Events Near You</h2>
+            <p>Find and attend the best events in your city!</p>
+        </section>
+    
+        <section class="events">
+            <h2> Our upcoming Events</h2>
+            
+            {% for event in all_events %}
+            <div class="event-card">
+                <img src="../static/images/{{event.image}}" >
+                <div class="event-info">
+                    <h3> {{event.event_name}}</h3><br>
+                    <p>Date: {{event.created_at}}</p><br>
+                    <p>Location:{{event.location.location_name}} </p><br>
+                    <a href="/payment/{{event.id}}" class="btn">Get your ticket Now</a>
+                    <div class="button">
+                        <button>Get more details</details> </button>
+                                <div class="modal" id="modal">
+                                    <div class="modal-header">
+                                            <div class="title">Event details</div>
+                                            <button class="close-button">&times;</button>
+                                            </div>
+                                    <div class="modal-body">
+                                            <p>Artist:{{event.event_artists}}</p><br>
+                                            <p>Ticket price:{{event.ticket_price}}dt</p><br>
+                                            <p>Available places:{{event.event_places}} place</p><br>
+                                            <p>Event duration :{{event.event_duration}} days</p><br>
+                                            <p>Event place:{{event.event_location}}</p>
+                                            </div>
+                </div>
+                </div>
+                <div id="overlay"></div>
+                    
+
+                </div>
+            </div>
+            {% endfor %}
+        
+        
+        </section>
+        <footer>
+            <ul>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p>&copy; 2024 Events Website</p>
+        </footer>
+    
+        <script type="text/javascript" src="{{url_for('static', filename='/js/script2.js')}}"></script>
+</body>
+</html>

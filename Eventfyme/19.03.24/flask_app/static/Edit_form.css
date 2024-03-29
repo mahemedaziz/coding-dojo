@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Lora", serif; */
+}
+
+body {
+    height: 100vh;
+    /* overflow: hidden; */
+    background-image: url(../static/design/background.jpg);
+    background-attachment: fixed; /* Ajout de la propriété pour fixer l'image de fond */
+    background-size: cover; /* Assure que l'image de fond couvre toute la zone visible */
+    background-position: center; /* Centrer l'image de fond */
+}
+
+.logo {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    align-items: stretch;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: #f5eeD1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    height: 82px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.nav-links li a {
+    color: #0e0101;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    padding: 20px;
+    margin-right: 1rem;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    align-items: baseline;
+    margin-top: 22px;
+}
+
+.event-info {
+    padding: 30px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    
+}
+
+.Create{
+    text-align: center;
+}
+
+.button{
+    margin: 20px;
+    margin-left: 1129px;
+    width: 50px;
+
+}

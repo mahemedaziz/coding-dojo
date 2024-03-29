@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style2.css') }}">
+    
+</head>
+
+<body>
+
+    <h1>Pick your location </h1>
+<div>
+    <body>
+        <div class="container">
+            <h1>Event Locations</h1>
+            <ul>
+            {% for location in all_location %}
+            
+                <li><a href="/location/{{location.location_id}}">{{location.location_name}}</a>
+        
+            
+            {% endfor %}
+        </ul>
+        </div>
+        
+    
+</body>
+</html>
