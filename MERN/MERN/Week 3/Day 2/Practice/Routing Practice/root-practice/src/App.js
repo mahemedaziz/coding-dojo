@@ -17,13 +17,18 @@ const DynamicComponent = () => {
 
 const ColoredWord = () => {
   const { word, textColor, bgColor } = useParams(); // Get the dynamic part of the URL
+  const isNumber = isNaN(+word); // isNaN(+"35") si value est un nombre,
 
   const styles = {
     color: textColor,
     backgroundColor: bgColor,
   };
 
-  return <h1 style={styles}>The word is : {word}</h1>;
+  return (
+    <h1 style={styles}>
+      {isNumber ? `The word is : ${word}` : `The number is : ${word}`}
+    </h1>
+  );
 };
 
 // const Hello = (props) => {
