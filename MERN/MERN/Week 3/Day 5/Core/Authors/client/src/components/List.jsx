@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
+import "../css/List.css";
 
 const List = () => {
   const [authors, setAuthors] = useState([]);
@@ -32,9 +33,10 @@ const List = () => {
       });
   };
   return (
-    <div>
+    <div className="linke">
       <Link to="/authors/new">Add an author </Link>
-      <table>
+      <p className="under">We have quoted by :</p>
+      <table id="customers">
         <thead>
           <th>Author</th>
           <th>Actions availlable</th>
@@ -47,14 +49,14 @@ const List = () => {
               </td>
               <td>
                 <button
-                  className="btn btn-primary"
+                  className="btn"
                   onClick={() => nav(`/authors/${c._id}/edit`)}
                 >
                   Edit
                 </button>
                 &nbsp;&nbsp;&nbsp;
                 <button
-                  className="btn btn-danger"
+                  className="btn"
                   onClick={() => {
                     deleteAuthor(c._id);
                   }}

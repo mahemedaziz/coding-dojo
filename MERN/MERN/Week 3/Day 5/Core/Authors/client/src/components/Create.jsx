@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import "../css/Add.css";
 
 const Create = () => {
   const [name, setName] = useState("");
@@ -32,29 +33,32 @@ const Create = () => {
   };
 
   return (
-    <div>
+    <div className="linke">
       <Link to="/">Home </Link>
-      <form onSubmit={SubmitHandle}>
+      <form onSubmit={SubmitHandle} className="form">
         {errors.map((err, i) => (
           <p key={i} style={{ color: "red" }}>
             {err}
           </p>
         ))}
-        <label className="label-control">Name : </label>
-        <input
-          type="text"
-          className="form-control"
-          onChange={(e) => {
-            setName(e.target.value);
-          }}
-        />
+        <div className="add">
+          <label className="label-control">Name : </label>
+          <input
+            type="text"
+            className="form-control"
+            onChange={(e) => {
+              setName(e.target.value);
+            }}
+          />
+        </div>
 
-        <br />
-        <Link to="/">
-          <button className="btn btn-success">Cancel</button>
-        </Link>
-        <br />
-        <button className="btn btn-success">Submit</button>
+        <div className="button">
+          <Link to="/">
+            <button className="btn-success">Cancel</button>
+          </Link>
+
+          <button className="btn-success">Submit</button>
+        </div>
       </form>
     </div>
   );

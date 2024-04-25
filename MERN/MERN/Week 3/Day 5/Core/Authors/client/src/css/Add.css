@@ -1,0 +1,42 @@
+.linke {
+  font-size: 30px;
+  color: blue;
+  margin-left: 50px;
+}
+.under {
+  color: darkviolet;
+}
+.form {
+  border: 2px solid grey;
+  padding: 20px;
+  color: gray;
+  width: 600px;
+  margin-top: 20px;
+}
+.add {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  width: 500px;
+  height: 50px;
+  margin-top: 20px;
+  font-size: 30px;
+  color: grey;
+}
+
+.button {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+.btn-success {
+  margin-left: 10px;
+  height: 50px;
+  width: 150px;
+  background-color: #6abbf8;
+  font-size: 30px;
+  color: aliceblue;
+  border-radius: 20px;
+  border: gray;
+}

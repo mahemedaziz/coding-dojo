@@ -1,0 +1,46 @@
+.linke {
+  font-size: 30px;
+  color: blue;
+  margin-left: 50px;
+}
+.under {
+  color: darkviolet;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  text-decoration: none;
+}
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-decoration: none;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #d3d3d3;
+  color: white;
+}
+.btn {
+  height: 50px;
+  width: 150px;
+  background-color: #7f8688;
+  font-size: 20px;
+  color: #f2f2f2;
+  border-radius: 3px;
+}

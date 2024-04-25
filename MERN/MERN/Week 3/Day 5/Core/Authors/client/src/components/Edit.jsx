@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import "../css/Add.css";
 
 const Edit = () => {
   const { id } = useParams();
@@ -20,6 +21,7 @@ const Edit = () => {
         console.log(err);
       });
   }, [id]);
+
   const UpdateHandle = (e) => {
     e.preventDefault();
     axios
@@ -31,42 +33,42 @@ const Edit = () => {
         nav("/");
       })
       .catch((err) => {
-        // console.log(err);
+        console.log(err);
         const errorRes = err.response.data.errors;
         const errArray = [];
         for (const key of Object.keys(errorRes)) {
           errArray.push(errorRes[key].message);
         }
         setErrors(errArray);
-        console.log(setErrors);
       });
   };
 
   return (
-    <div>
+    <div className="linke">
       <Link to="/">Home </Link>
-      <form onSubmit={UpdateHandle}>
+      <form onSubmit={UpdateHandle} className="form">
         {errors.map((err, i) => (
           <p key={i} style={{ color: "red" }}>
             {err}
           </p>
         ))}
-        <label className="label-control">Name : </label>
-        <input
-          value={name}
-          type="text"
-          className="form-control"
-          onChange={(e) => {
-            setName(e.target.value);
-          }}
-        />
-
-        <br />
-        <Link to="/">
-          <button className="btn btn-success">Cancel</button>
-        </Link>
-        <br />
-        <button className="btn btn-success">Submit</button>
+        <div className="add">
+          <label className="label-control">Name : </label>
+          <input
+            value={name}
+            type="text"
+            className="form-control"
+            onChange={(e) => {
+              setName(e.target.value);
+            }}
+          />
+        </div>
+        <div className="button">
+          <Link to="/">
+            <button className="btn-success">Cancel</button>
+          </Link>
+          <button className="btn-success">Submit</button>
+        </div>
       </form>
     </div>
   );

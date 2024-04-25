@@ -8,7 +8,9 @@ import Edit from "../src/components/Edit";
 function App() {
   return (
     <div className="App">
-      <h1> Authors 📺 😎</h1>
+      <div className="nav">
+        <h1> Favorite authors</h1>
+      </div>
       {/* <Link to="/">ALL Authors </Link>
       <br />
       <Link to="/authors/new">Create Movie </Link> */}
