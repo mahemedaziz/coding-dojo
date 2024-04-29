@@ -1,0 +1,8 @@
+.Header {
+  font-size: 100px;
+  /* margin-top: 20px; */
+  display: flex;
+}
+h1 {
+  font-size: 80px;
+}
