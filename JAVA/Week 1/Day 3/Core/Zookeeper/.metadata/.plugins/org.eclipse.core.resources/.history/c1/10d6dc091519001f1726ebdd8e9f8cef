@@ -1,8 +1,0 @@
-package com.codingdojo.zookeeper;
-
-public class Gorilla extends Mammal {
-
-	public Gorilla() {
-        super();
-    }
-}
