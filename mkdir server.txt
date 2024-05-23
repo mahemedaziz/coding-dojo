@@ -1,0 +1,16 @@
+mkdir server
+cd server
+mkdir controllers config models routes
+touch server.js
+touch .env
+touch .gitignore
+npm init -y
+npm i mongoose express dotenv nodemon
+npm i cors
+
+---------------------------
+Client
+npx create-react-app client
+cd client
+npm i react-router-dom axios
+
