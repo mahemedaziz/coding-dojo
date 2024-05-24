@@ -1,4 +1,0 @@
-INDEX VERSION 1.134+C:\Users\AZIZ\Desktop\CareSoft\.metadata\.plugins\org.eclipse.jdt.core
-1482005320.index
-1865797976.index
-1211951193.index
