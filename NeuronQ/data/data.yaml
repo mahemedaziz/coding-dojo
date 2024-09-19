@@ -1,0 +1,7 @@
+train: /content/drive/MyDrive/data/images/Train  # Répertoire des images d'entraînement
+val: /content/drive/MyDrive/data/images/Validation  # Répertoire des images de validation
+
+nc: 2  # Nombre de classes
+names: 
+  0: Fire
+  1: Smoke
